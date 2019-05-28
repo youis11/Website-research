@@ -1,0 +1,104 @@
+body {
+    background: rgb(0, 114, 114);
+    color: white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* HEADER */
+  
+  header {
+    background-color: darkcyan;
+    height: 120px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  
+  header .logo a {
+    background-image: url("logo.png");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 100px;
+    position: relative;
+    text-indent: -9999999px;
+    top: -30px;
+    width: 100px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    background: darkcyan;
+    color: white;
+    font-size: 12px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  footer li{
+      display: inline-block;
+  }
+
+  footer  a {
+    background-size: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    text-indent: -9999999px;
+    top: -17px;
+    width: 50px;
+  }
+
+  footer .github a {
+    background-image: url("github_logo.png");
+  }
+
+  footer .twitter a {
+    background-image: url("twitter_logo.png");
+  }
+
+
+  footer .mail p{
+    background-image: url("mail_logo.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    text-indent: 60px;
+    line-height: 50px;;
+    width: 50px;
+  }
