@@ -1,7 +1,5 @@
 body {
     background: rgb(0, 114, 114);
-    color: white;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -17,6 +15,7 @@ body {
   
   header a {
     color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 40px;
@@ -90,7 +89,6 @@ body {
     background-image: url("twitter_logo.png");
   }
 
-
   footer .mail p{
     background-image: url("mail_logo.png");
     background-size: 50px;
@@ -102,3 +100,75 @@ body {
     line-height: 50px;;
     width: 50px;
   }
+
+  /* SECTION*/
+  section h2{
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+
+  .gallery{
+    width:640px;
+    height:400px;
+    position: relative;
+    left:50%;
+    transform:translate(-50%);
+    background-image:url('https://cdn02.nintendo-europe.com/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_finalfantasytacticsadvance/WiiUVC_FinalFantasyTacticsAdvance_05.jpg');
+    background-size: 640px 400px;
+    background-repeat: no-repeat;
+    box-shadow: 1px 2px 10px 5px white;
+    animation: slider 14s infinite linear;
+  } 
+
+  @keyframes slider{
+    0%{ background-image:url('https://cdn02.nintendo-europe.com/media/images/06_screenshots/games_5/virtual_console_wii_u_3/wiiuvc_finalfantasytacticsadvance/WiiUVC_FinalFantasyTacticsAdvance_05.jpg');
+    background-size : 640px 400px; }
+    33%{ background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2rOMKHp9_swVOq9aaxpuwZfrgUlOFEDKrveE3bANB6xiwbaKi');
+    background-size : 640px 400px; }
+    66%{ background-image: url('https://i.kinja-img.com/gawker-media/image/upload/s--5jKcnZeY--/c_scale,f_auto,fl_progressive,q_80,w_800/18ah62mtx9ajwjpg.jpg');
+    background-size : 640px 400px; }
+  }
+
+.game_description{
+  background: rgb(64, 78, 138);
+  color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  margin: 20px;
+  margin-bottom: 0%;
+  padding: 20px;
+}
+
+.video_title{
+  background: rgb(90, 110, 197);
+  color: whitesmoke;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  margin: 0% 20px;
+  padding: 25px 20px 15px 20px;
+}
+
+.videos{
+  background: rgb(90, 110, 197);
+  margin: 20px;
+  margin-top:0%;
+  padding: 5px 20px 20px 20px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.videos figure {
+  margin: auto;
+  padding: 5px;
+  width: 200px;
+}
+
+.videos figure iframe {
+  border: 1px solid white;
+  box-shadow: gray 0 0 10px;
+  width: 200px;
+  height: 200px;
+}
