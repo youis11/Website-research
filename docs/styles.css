@@ -20,6 +20,7 @@ body {
     text-transform: uppercase;
     margin-top: 40px;
     margin-left: 30px;
+    font-size: 19px;
   }
 
   a:hover {
@@ -55,7 +56,8 @@ body {
   footer {
     background: darkcyan;
     color: white;
-    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
     padding: 20px 20px;
     text-align: center;
   }
@@ -102,6 +104,7 @@ body {
   }
 
   /* SECTION*/
+
   section h2{
     color:white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -171,4 +174,32 @@ section div.videos figure iframe {
   box-shadow: gray 0 0 10px;
   width: 200px;
   height: 200px;
+}
+
+section ul.list-releases{
+  padding-left: 0;
+  margin: 20px 20%;
+  font-family: sintony,Arial;
+  color: black;
+  background-color: rgb(195, 229, 240);;
+}
+
+section ul li{
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  border: 2px solid gray;
+  min-height: 85px;
+  font-size: 16px;
+}
+
+section ul li a{
+  text-decoration: none;
+  background: rgb(78, 181, 216);
+  color: white;
+  padding: 3px 10px;
+  font-size: 18px;
+  line-height: 2;
+  border-radius: 4px;
+  float: right !important;
 }
