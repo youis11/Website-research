@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  section{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
   
   /* HEADER */
   
@@ -26,7 +30,6 @@ body {
   a:hover {
       text-decoration: underline;
   }
-
   
   header .logo a {
     background-image: url("logo.png");
@@ -107,7 +110,6 @@ body {
 
   section h2{
     color:white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
   }
 
@@ -136,7 +138,6 @@ body {
 section.game_description,section.team{
   background: rgb(64, 78, 138);
   color: whitesmoke;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
   margin: 20px;
   margin-bottom: 0%;
@@ -146,7 +147,6 @@ section.game_description,section.team{
 section h1.video_title{
   background: rgb(90, 110, 197);
   color: whitesmoke;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 24px;
   margin: 0% 20px;
   padding: 25px 20px 15px 20px;
@@ -193,7 +193,7 @@ section ul li{
   font-size: 16px;
 }
 
-section ul li a{
+section ul li a, section div div a.download_link{
   text-decoration: none;
   background: rgb(78, 181, 216);
   color: white;
@@ -207,7 +207,6 @@ section ul li a{
 /* FEATURES */
 
 section.members {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
   background:rgb(195, 240, 255);
   color: black;
@@ -252,4 +251,61 @@ section.team img {
   width: 400px;
   float: right;
   margin-left: 40px;
+}
+
+/* POP UP*/
+
+#modal094:target,#modal093:target{
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal094:target .popup,#modal093:target .popup{
+  opacity: 1;
+  visibility: visible;
+}
+
+.background{
+  background-color: rgba(0,0,0, .8);
+  width:100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.popup{
+  min-width: 50%;
+  min-height: 30%;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  border-radius: 1em;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+  line-height: 1.5em;
+}
+
+section div div h2{
+  color: dodgerblue;
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.changelog_close{
+  color: #363636;
+  font-size: 2em;
+  position: absolute;
+  top: .5em;
+  right: 1em;
 }
