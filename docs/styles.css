@@ -203,3 +203,36 @@ section ul li a{
   border-radius: 4px;
   float: right !important;
 }
+
+/* FEATURES */
+
+section.members {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  background:rgb(195, 240, 255);
+  color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section.members figure {
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+
+  width: 200px;
+}
+
+section.members figure img {
+  border: 1px solid white;
+  border-radius: 50%;
+  box-shadow: gray 0 0 10px;
+  width: 200px;
+}
+
+figcaption{
+  /*background: white;*/
+  border-radius: 8px;
+}
