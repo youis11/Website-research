@@ -133,7 +133,7 @@ body {
     background-size : 640px 400px; }
   }
 
-section.game_description{
+section.game_description,section.team{
   background: rgb(64, 78, 138);
   color: whitesmoke;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -215,6 +215,9 @@ section.members {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 20px;
+  margin-top: 0%;
+  padding: 20px;
 }
 
 section.members figure {
@@ -235,4 +238,18 @@ section.members figure img {
 figcaption{
   /*background: white;*/
   border-radius: 8px;
+}
+
+section.team{
+  min-height: 300px;
+  line-height: 1.5em;
+}
+
+section.team img {
+  border: 1px solid white;
+  border-radius: 2em;
+  box-shadow: gray 0 0 10px;
+  width: 400px;
+  float: right;
+  margin-left: 40px;
 }
