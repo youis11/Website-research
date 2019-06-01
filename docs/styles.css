@@ -184,7 +184,7 @@ section ul.list-releases{
   background-color: rgb(195, 229, 240);;
 }
 
-section ul li{
+section ul.list-releases li{
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
@@ -308,4 +308,46 @@ section div div h2{
   position: absolute;
   top: .5em;
   right: 1em;
+}
+
+section.member{
+  background: lightblue;
+  margin: 20px 20px 0 20px;
+  padding: 2em 3em;
+
+}
+
+section.member h1{
+  color: darkslateblue;
+}
+
+section.member img{
+  width: 250px;
+  height:300px;
+  border: 1px solid white;
+}
+
+section.member ul{
+  background: rgb(211, 238, 247);
+  height: 27.5%;
+  min-width: 50%;
+  position: absolute;
+  font-size: 1.5em;
+  top: 10.5em;
+  left: 14em;
+  line-height: 3em;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+section.work{
+  background: rgb(131, 201, 224);
+  margin: 5px 20px 20px 20px;
+  padding: 2em;
+  font-size: 18px;
+}
+
+section.work h2{
+  font-size: 28px;
+  text-align: left;
 }
